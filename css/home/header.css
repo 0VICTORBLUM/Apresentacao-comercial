@@ -36,11 +36,12 @@ header {
   border-radius: 8px;
   color: var(--cor-p3);
   margin: 40px auto;
+  margin-bottom: 120px;
 }
 .detalhe {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 @media (max-width: 480px) {
   .detalhe {
@@ -54,11 +55,10 @@ header {
   .menus {
     justify-content: center;
   }
-
 }
 
 .menus {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }

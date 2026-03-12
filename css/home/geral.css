@@ -1,18 +1,53 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-a, ul, li, p, h1, h2 {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
+a,
+ul,
+li,
+p,
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
 }
 
 .container {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.button {
+  display: inline-flex;
+  gap: 12px;
+  padding: 12px 24px;
+  background-color: var(--cor-p2);
+  border-radius: 8px;
+  color: var(--cor-p3);
+  margin-top: 40px;
+}
+
+.button:hover {
+  background-color: var(--cor-p1);
+  transition: background-color 0.5s ease;
+}
+.button::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  justify-content: center;
+  background-image: url("/css/assets/arrow.svg");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+}
+.button:hover::after {
+  transform: translateX(4px);
+  transition: transform 0.5s ease;
+  color: var(--cor-p3);
 }
