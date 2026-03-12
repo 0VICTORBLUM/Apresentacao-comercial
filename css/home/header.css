@@ -42,6 +42,20 @@ header {
     gap: 12px;
     align-items: center;
 }
+@media (max-width: 480px) {
+  .detalhe {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .menus {
+    justify-content: center;
+  }
+
+}
 
 .menus {
     display: flex;
