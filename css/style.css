@@ -1,3 +1,7 @@
 /* utilitarios */
 @import url(/css/utilitarios/cores.css);
 @import url(/css/utilitarios/tipografia.css);
+
+/* home */
+@import url(/css/home/geral.css);
+@import url(/css/home/header.css);
