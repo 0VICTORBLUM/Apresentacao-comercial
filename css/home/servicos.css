@@ -22,3 +22,21 @@ height: 100%;
     flex-direction: column;
     gap: 20px;
 }
+
+.lista-site li {
+    position: relative; 
+    padding-left: 28px; 
+}
+
+.lista-site li::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 2px; 
+    width: 100%;
+    height: 24px;
+    
+    background-image: url('/css/assets/asterisco.svg');
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
