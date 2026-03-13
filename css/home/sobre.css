@@ -1,0 +1,36 @@
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.titulo-sobre {
+  position: relative; 
+  margin-bottom: 80px;
+}
+
+.titulo-sobre::after {
+  content: ""; 
+  position: absolute;
+  
+  
+  background-image: url('/css/assets/detalhe-wave.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  
+  width: 110%; 
+  height: 130%;
+
+ 
+  left: -80px; 
+  top: 40%;
+  
+  z-index: 1;
+  pointer-events: none; 
+}
+
+.sobre div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Ajuste este valor para o respiro desejado */
+}
