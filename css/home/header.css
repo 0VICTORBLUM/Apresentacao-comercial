@@ -35,28 +35,56 @@ header {
   background-color: var(--cor-p2);
   border-radius: 8px;
   color: var(--cor-p3);
-  margin-bottom: 80px;
-  margin-top: 20px;
-  /* position: sticky;
-  top: 20px; */
+  margin: 20px 20px 80px;
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
 }
 .detalhe {
   display: flex;
   gap: 12px;
   align-items: center;
 }
-@media (max-width: 480px) {
-  .detalhe {
-    display: none;
-  }
 
-  header {
-    justify-content: center;
-    margin-bottom: 40px;
-  }
+#menu-check {
+  display: none;
+}
 
-  .menus {
-    justify-content: center;
+.menu-botao {
+  display: none; 
+  cursor: pointer;
+  z-index: 1002; 
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin-left: auto;
+}
+
+.menu-botao::before {
+  top: 0;
+}
+
+.menu-botao span {
+  top: 9px;
+}
+
+.menu-botao::after {
+  bottom: 0;
+}
+
+.menu-botao span, .menu-botao::before, .menu-botao::after {
+  content: "";
+  display: block;
+  background: var(--cor-p1);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 900px) {
+    header {
+    margin: 40px 16px 40px;
   }
 }
 
@@ -65,3 +93,52 @@ header {
   flex-wrap: wrap;
   gap: 40px;
 }
+
+@media (max-width: 480px) {
+.menu-botao {
+    display: block;
+  }
+  
+  nav {
+    display: contents;
+    width: 0;
+    height: 0;
+  }
+
+  .menus {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--cor-p2);
+    border-radius: 8px;
+    
+    
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+   
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+  }
+}
+#menu-check:checked ~ nav .menus {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  
+  #menu-check:checked ~ .menu-botao span { opacity: 0; }
+  #menu-check:checked ~ .menu-botao::before { transform: rotate(45deg); top: 9px; }
+  #menu-check:checked ~ .menu-botao::after { transform: rotate(-45deg); bottom: 9px; }
