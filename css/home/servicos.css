@@ -1,0 +1,24 @@
+.card-servico {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+    background-color: var(--cor-p2);
+    color: var(--cor-p3);
+    padding: 40px 60px;
+    border-radius: 8px;
+    margin: 40px 20px;
+}
+
+.cta-bloco {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+height: 100%; 
+  justify-content: space-between;
+}
+.lista-site {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
