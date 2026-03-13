@@ -40,3 +40,25 @@ height: 100%;
     background-size: contain;
     background-repeat: no-repeat; 
 }
+
+@media (max-width: 900px) {
+    .card-servico {
+        margin: 40px 16px;
+        padding: 24px;
+    }
+    .card-servico .font-h2 {
+        font: 900 2.5rem/1.5 "fraunces";
+    }
+    .lista-site li::before {
+        left: -4px;
+        top: 2px; 
+        width: 100%;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-servico {
+        grid-template-columns: 1fr;
+    }
+}
