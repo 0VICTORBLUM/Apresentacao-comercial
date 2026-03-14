@@ -1,0 +1,16 @@
+.footer-bg {
+  background-image: url(/css/assets/waves-footer.svg);
+  padding-bottom: 40px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .footer-bg {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .footer-bg .font-p3 {
+    font-size: 0.75rem;
+  }
+}
