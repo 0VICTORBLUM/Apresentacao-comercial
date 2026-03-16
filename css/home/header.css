@@ -44,6 +44,7 @@ header {
   display: flex;
   gap: 12px;
   align-items: center;
+  height: 40px;
 }
 
 #menu-check {
@@ -51,9 +52,9 @@ header {
 }
 
 .menu-botao {
-  display: none; 
+  display: none;
   cursor: pointer;
-  z-index: 1002; 
+  z-index: 1002;
   width: 30px;
   height: 20px;
   position: relative;
@@ -72,7 +73,9 @@ header {
   bottom: 0;
 }
 
-.menu-botao span, .menu-botao::before, .menu-botao::after {
+.menu-botao span,
+.menu-botao::before,
+.menu-botao::after {
   content: "";
   display: block;
   background: var(--cor-p1);
@@ -83,7 +86,7 @@ header {
 }
 
 @media (max-width: 900px) {
-    header {
+  header {
     margin: 40px 16px 40px;
   }
 }
@@ -95,10 +98,10 @@ header {
 }
 
 @media (max-width: 480px) {
-.menu-botao {
+  .menu-botao {
     display: block;
   }
-  
+
   nav {
     display: contents;
     width: 0;
@@ -106,7 +109,6 @@ header {
   }
 
   .menus {
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -114,17 +116,15 @@ header {
     height: 100%;
     background: var(--cor-p2);
     border-radius: 8px;
-    
-    
+
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
     padding-left: 20px;
     box-sizing: border-box;
 
-   
     opacity: 0;
     visibility: hidden;
     transform: translateX(-20px);
@@ -133,12 +133,19 @@ header {
   }
 }
 #menu-check:checked ~ nav .menus {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-  }
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
 
-  
-  #menu-check:checked ~ .menu-botao span { opacity: 0; }
-  #menu-check:checked ~ .menu-botao::before { transform: rotate(45deg); top: 9px; }
-  #menu-check:checked ~ .menu-botao::after { transform: rotate(-45deg); bottom: 9px; }
+#menu-check:checked ~ .menu-botao span {
+  opacity: 0;
+}
+#menu-check:checked ~ .menu-botao::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+#menu-check:checked ~ .menu-botao::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
