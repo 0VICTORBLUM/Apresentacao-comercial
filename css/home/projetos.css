@@ -72,7 +72,7 @@
   .info-card {
     display: contents;
   }
-  /* Firs-child define que vamo controlar a ordem do primerio elemento filho */
+  /* Firs-child define que posso controlar a ordem do primerio elemento filho */
   .info-card div:first-child {
     order: 1;
   }
