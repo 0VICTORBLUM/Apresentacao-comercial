@@ -5,6 +5,13 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 160px;
+}
+
 a,
 ul,
 li,
