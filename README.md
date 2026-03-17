@@ -65,7 +65,7 @@ Otimização para métricas reais de mercado
 
 Caso queira conversar sobre um projeto ou oportunidade:
 
-WhatsApp: wa.me/5541996309392
+WhatsApp: (https://wa.me/5541996309392)
 
 📄 Licença
 
