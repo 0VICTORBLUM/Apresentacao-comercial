@@ -13,6 +13,9 @@
 .font-p3 {
   font: 400 1.125rem/1.5 "Montserrat";
 }
+.font-p4 {
+  font: 400 0.875rem/1.5 "Montserrat";
+}
 
 @media (max-width: 900px) {
   .font-h1 {
@@ -29,5 +32,8 @@
   }
   .font-p3 {
     font: 400 1rem/1.5 "Montserrat";
+  }
+  .font-p4 {
+    font: 400 0.75rem/1.5 "Montserrat";
   }
 }
